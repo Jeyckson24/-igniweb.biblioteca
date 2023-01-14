@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BibliotecaController;
+use App\Http\Controllers\BibliotecaVController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('/auth/login');
 });
+
+
+Route::resource('misreserva', BibliotecaController::class);
+Route::resource('bibliotecaV', BibliotecaVController::class);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
