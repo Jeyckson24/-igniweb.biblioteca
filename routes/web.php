@@ -10,10 +10,14 @@ use App\Http\Controllers\BibliotecaVController;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| Aquí es donde puede registrar rutas web para su aplicación. Estas
+| las rutas son cargadas por el RouteServiceProvider dentro de un grupo que
+| contiene el grupo de middleware "web". ¡Ahora crea algo grandioso!
 |
+*/
+
+/*
+The connection paths are created for the different queries and return to the views
 */
 
 Route::get('/', function () {

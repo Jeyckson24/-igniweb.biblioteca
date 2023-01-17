@@ -12,6 +12,8 @@ class BibliotecaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    /* Se crea la funcion index la cual muestra los libros resevados por el usuario*/
     public function index()
     {
         $libros = biblioteca::all();
@@ -70,6 +72,8 @@ class BibliotecaController extends Controller
      * @param  \App\Models\Biblioteca  $biblioteca
      * @return \Illuminate\Http\Response
      */
+
+    /* The update function is created which, when indicating to the user that it returns a book, updates the field of the book id_user */
     public function update(Request $request, $id)
     {
         $libro = biblioteca::findOrFail($id);

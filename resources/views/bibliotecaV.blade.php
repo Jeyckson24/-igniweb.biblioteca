@@ -21,17 +21,16 @@
 
  
     
-    
+    <!-- The table and columns are created to display the information -->
 
     <table class="table max-w-7xl mx-auto sm:px-6 lg:px-8 text-center">              
-        <thead>
-            
-                
+        <thead>         
                 <th scope="col">Titulo</th>
                 <th scope="col">Autor</th>
                 <th scope="col">Accion</th>
             
         </thead>
+    <!-- The database is scanned with the information found but only those with the value 0 in the id_user column are shown -->
         <tbody>
         
             @forelse ($libros as $item)
@@ -53,6 +52,9 @@
         </tbody>
         
     </table>
+
+    <!-- Code for the return of the book, what it does is that it takes the value of the user's id and sends it to change the field in the id_user database, which is the identifier for
+    know which user has the book -->
 
     <script>
       function reservarLibro(elem) {
